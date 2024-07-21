@@ -1,0 +1,397 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\up_skill_1> git --version
+git version 2.40.0.windows.1
+PS D:\up_skill_1> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS D:\up_skill_1> ls -1
+ls : Cannot find path 'D:\up_skill_1\-1' because it does not exist.
+At line:1 char:1
++ ls -1
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\up_skill_1\-1:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS D:\up_skill_1> git init``````````````````````````````````````````````````````````````````````````````````````````````step 1
+Initialized empty Git repository in D:/up_skill_1/.git/
+PS D:\up_skill_1> git init
+Reinitialized existing Git repository in D:/up_skill_1/.git/
+PS D:\up_skill_1> git status``````````````````````````````````````````````````````````````````````````````````````````````step 2
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        .metadata
+        README.md
+        analysis_options.yaml
+        android/
+        assets/
+        ios/
+        lib/
+        linux/
+        macos/
+        pubspec.lock
+        pubspec.yaml
+        test/
+        web/
+        windows/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\up_skill_1> git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS D:\up_skill_1> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS D:\up_skill_1> git add .``````````````````````````````````````````````````````````````````````````````````````````````step 3
+warning: in the working copy of '.metadata', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'android/app/google-services.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'android/app/src/main/java/io/flutter/app/FlutterMultiDexApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/Arrow Right.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/User.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/apple_box.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/code.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/email.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/email_box.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/google_box.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/ios.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/icons/password.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ios/Runner/GoogleService-Info.plist', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ios/firebase_app_id_file.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/firebase_options.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'linux/flutter/generated_plugin_registrant.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'linux/flutter/generated_plugin_registrant.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'linux/flutter/generated_plugins.cmake', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/Flutter/GeneratedPluginRegistrant.swift', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/Runner/GoogleService-Info.plist', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/firebase_app_id_file.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pubspec.lock', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'windows/flutter/generated_plugin_registrant.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'windows/flutter/generated_plugin_registrant.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'windows/flutter/generated_plugins.cmake', LF will be replaced by CRLF the next time Git touches it
+PS D:\up_skill_1> git commit -m "project Added"``````````````````````````````````````````````````````````````````````````````````````````````step 4
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mukad@Rishabh.(none)')
+PS D:\up_skill_1> git config --global user.email "mukadamrishabh@gmail.com"
+PS D:\up_skill_1> git config --global user.name "Rishabh Mukadam" 
+PS D:\up_skill_1> git commit -m "Project Added"``````````````````````````````````````````````````````````````````````````````````````````````step 4(b)
+[master (root-commit) 87c9891] Project Added
+ 182 files changed, 9289 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .metadata
+ create mode 100644 README.md
+ create mode 100644 analysis_options.yaml
+ create mode 100644 android/.gitignore
+ create mode 100644 android/app/build.gradle
+ create mode 100644 android/app/google-services.json
+ create mode 100644 android/app/src/debug/AndroidManifest.xml
+ create mode 100644 android/app/src/main/AndroidManifest.xml
+ create mode 100644 android/app/src/main/java/io/flutter/app/FlutterMultiDexApplication.java
+ create mode 100644 android/app/src/main/kotlin/com/example/up_skill_1/MainActivity.kt
+ create mode 100644 android/app/src/main/res/drawable-v21/launch_background.xml
+ create mode 100644 android/app/src/main/res/drawable/launch_background.xml
+ create mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/values-night/styles.xml
+ create mode 100644 android/app/src/main/res/values/styles.xml
+ create mode 100644 android/app/src/profile/AndroidManifest.xml
+ create mode 100644 android/build.gradle
+ create mode 100644 android/gradle.properties
+ create mode 100644 android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100644 android/settings.gradle
+ create mode 100644 assets/Backgrounds/App_logo.JPG
+ create mode 100644 assets/Backgrounds/SolApt_logo.png
+ create mode 100644 assets/Backgrounds/Spline.png
+ create mode 100644 assets/Backgrounds/balls_background.png
+ create mode 100644 assets/Backgrounds/img.png
+ create mode 100644 assets/Backgrounds/img_1.png
+ create mode 100644 assets/Backgrounds/img_2.png
+ create mode 100644 assets/Backgrounds/img_3.png
+ create mode 100644 assets/Backgrounds/img_4.png
+ create mode 100644 assets/Backgrounds/img_5.png
+ create mode 100644 assets/Backgrounds/img_6.png
+ create mode 100644 assets/Backgrounds/img_7.png
+ create mode 100644 assets/Backgrounds/img_8.png
+ create mode 100644 assets/Fonts/Inter-Regular.ttf
+ create mode 100644 assets/Fonts/Inter-SemiBold.ttf
+ create mode 100644 assets/Fonts/Poppins-Bold.ttf
+ create mode 100644 assets/icons/Apple.png
+ create mode 100644 assets/icons/Arrow Right.svg
+ create mode 100644 assets/icons/Google.png
+ create mode 100644 assets/icons/User.svg
+ create mode 100644 assets/icons/apple_box.svg
+ create mode 100644 assets/icons/code.svg
+ create mode 100644 assets/icons/email.svg
+ create mode 100644 assets/icons/email_box.svg
+ create mode 100644 assets/icons/google_box.svg
+ create mode 100644 assets/icons/img.png
+ create mode 100644 assets/icons/ios.svg
+ create mode 100644 assets/icons/password.svg
+ create mode 100644 assets/icons/profile_img.png
+ create mode 100644 assets/icons/solution.png
+ create mode 100644 ios/.gitignore
+ create mode 100644 ios/Flutter/AppFrameworkInfo.plist
+ create mode 100644 ios/Flutter/Debug.xcconfig
+ create mode 100644 ios/Flutter/Release.xcconfig
+ create mode 100644 ios/Runner.xcodeproj/project.pbxproj
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ create mode 100644 ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ create mode 100644 ios/Runner.xcworkspace/contents.xcworkspacedata
+ create mode 100644 ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ create mode 100644 ios/Runner/AppDelegate.swift
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+ create mode 100644 ios/Runner/Base.lproj/LaunchScreen.storyboard
+ create mode 100644 ios/Runner/Base.lproj/Main.storyboard
+ create mode 100644 ios/Runner/GoogleService-Info.plist
+ create mode 100644 ios/Runner/Info.plist
+ create mode 100644 ios/Runner/Runner-Bridging-Header.h
+ create mode 100644 ios/RunnerTests/RunnerTests.swift
+ create mode 100644 ios/firebase_app_id_file.json
+ create mode 100644 lib/Globs.dart
+ create mode 100644 lib/MCQ_details.dart
+ create mode 100644 lib/Screens/Explore/Explore.dart
+ create mode 100644 lib/Screens/Explore/Explore_components/Modules_tab.dart
+ create mode 100644 lib/Screens/Explore/Explore_components/Topic_list.dart
+ create mode 100644 lib/Screens/Explore/Explore_components/Youtube_explo.dart
+ create mode 100644 lib/Screens/MCQ_screen/components/mcq_card.dart
+ create mode 100644 lib/Screens/MCQ_screen/mcq_screen.dart
+ create mode 100644 lib/Screens/MathsSolver.dart
+ create mode 100644 lib/Screens/MyMain.dart
+ create mode 100644 lib/Screens/Profile/others_profile.dart
+ create mode 100644 lib/Screens/Profile/profile.dart
+ create mode 100644 lib/Screens/Profile/profile_edit.dart
+ create mode 100644 lib/Screens/Search/Search_screen.dart
+ create mode 100644 lib/Screens/onboding/components/LogIn_form.dart
+ create mode 100644 lib/Screens/onboding/onboding.dart
+ create mode 100644 lib/Screens/onboding/onboding_without_logIn.dart
+ create mode 100644 lib/firebase_options.dart
+ create mode 100644 lib/main.dart
+ create mode 100644 linux/.gitignore
+ create mode 100644 linux/CMakeLists.txt
+ create mode 100644 linux/flutter/CMakeLists.txt
+ create mode 100644 linux/flutter/generated_plugin_registrant.cc
+ create mode 100644 linux/flutter/generated_plugin_registrant.h
+ create mode 100644 linux/flutter/generated_plugins.cmake
+ create mode 100644 linux/main.cc
+ create mode 100644 linux/my_application.cc
+ create mode 100644 linux/my_application.h
+ create mode 100644 macos/.gitignore
+ create mode 100644 macos/Flutter/Flutter-Debug.xcconfig
+ create mode 100644 macos/Flutter/Flutter-Release.xcconfig
+ create mode 100644 macos/Flutter/GeneratedPluginRegistrant.swift
+ create mode 100644 macos/Runner.xcodeproj/project.pbxproj
+ create mode 100644 macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ create mode 100644 macos/Runner.xcworkspace/contents.xcworkspacedata
+ create mode 100644 macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 macos/Runner/AppDelegate.swift
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png
+ create mode 100644 macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png
+ create mode 100644 macos/Runner/Base.lproj/MainMenu.xib
+ create mode 100644 macos/Runner/Configs/AppInfo.xcconfig
+ create mode 100644 macos/Runner/Configs/Debug.xcconfig
+ create mode 100644 macos/Runner/Configs/Release.xcconfig
+ create mode 100644 macos/Runner/Configs/Warnings.xcconfig
+ create mode 100644 macos/Runner/DebugProfile.entitlements
+ create mode 100644 macos/Runner/GoogleService-Info.plist
+ create mode 100644 macos/Runner/Info.plist
+ create mode 100644 macos/Runner/MainFlutterWindow.swift
+ create mode 100644 macos/Runner/Release.entitlements
+ create mode 100644 macos/RunnerTests/RunnerTests.swift
+ create mode 100644 macos/firebase_app_id_file.json
+ create mode 100644 pubspec.lock
+ create mode 100644 pubspec.yaml
+ create mode 100644 test/widget_test.dart
+ create mode 100644 web/favicon.png
+ create mode 100644 web/icons/Icon-192.png
+ create mode 100644 web/icons/Icon-512.png
+ create mode 100644 web/icons/Icon-maskable-192.png
+ create mode 100644 web/icons/Icon-maskable-512.png
+ create mode 100644 web/index.html
+ create mode 100644 web/manifest.json
+ create mode 100644 windows/.gitignore
+ create mode 100644 windows/CMakeLists.txt
+ create mode 100644 windows/flutter/CMakeLists.txt
+ create mode 100644 windows/flutter/generated_plugin_registrant.cc
+ create mode 100644 windows/flutter/generated_plugin_registrant.h
+ create mode 100644 windows/flutter/generated_plugins.cmake
+ create mode 100644 windows/runner/CMakeLists.txt
+ create mode 100644 windows/runner/Runner.rc
+ create mode 100644 windows/runner/flutter_window.cpp
+ create mode 100644 windows/runner/flutter_window.h
+ create mode 100644 windows/runner/main.cpp
+ create mode 100644 windows/runner/resource.h
+ create mode 100644 windows/runner/resources/app_icon.ico
+ create mode 100644 windows/runner/runner.exe.manifest
+ create mode 100644 windows/runner/utils.cpp
+ create mode 100644 windows/runner/utils.h
+ create mode 100644 windows/runner/win32_window.cpp
+ create mode 100644 windows/runner/win32_window.h
+PS D:\up_skill_1> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\up_skill_1> ls -a
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS D:\up_skill_1> ls
+
+
+    Directory: D:\up_skill_1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        08-04-2024     23:55                .dart_tool
+d-----        21-07-2024     11:21                .idea
+d-----        09-03-2024     11:45                android
+d-----        03-02-2024     14:10                assets
+d-----        21-07-2024     11:02                build
+d-----        26-02-2024     21:09                ios
+d-----        21-04-2024     16:30                lib
+d-----        03-02-2024     13:03                linux
+d-----        26-02-2024     21:09                macos
+d-----        09-03-2024     18:11                sampledata
+d-----        03-02-2024     13:03                test                                                                                                                                
+d-----        03-02-2024     13:03                web
+d-----        03-02-2024     13:03                windows
+-a----        21-07-2024     11:00           2998 .flutter-plugins                                                                                                                    
+-a----        21-07-2024     11:00           9255 .flutter-plugins-dependencies
+-a----        03-02-2024     13:03            734 .gitignore
+-a----        03-02-2024     13:03           1706 .metadata
+-a----        03-02-2024     13:03           1448 analysis_options.yaml
+-a----        22-04-2024     08:36          24031 pubspec.lock                                                                                                                        
+-a----        22-04-2024     08:36           4928 pubspec.yaml
+-a----        03-02-2024     13:03            569 README.md
+-a----        09-03-2024     12:13            945 up_skill_1.iml
+
+
+PS D:\up_skill_1> cd lib
+PS D:\up_skill_1\lib> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\up_skill_1\lib> ls
+
+
+    Directory: D:\up_skill_1\lib
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15-04-2024     21:44                Screens
+-a----        26-02-2024     21:09           2859 firebase_options.dart
+-a----        21-04-2024     16:30           1003 Globs.dart
+-a----        21-04-2024     16:02           3469 main.dart
+-a----        23-02-2024     15:39            300 MCQ_details.dart
+
+
+PS D:\up_skill_1\lib> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\up_skill_1\lib> ls
+
+
+    Directory: D:\up_skill_1\lib
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                                
+----                 -------------         ------ ----
+d-----        15-04-2024     21:44                Screens
+-a----        26-02-2024     21:09           2859 firebase_options.dart
+-a----        21-04-2024     16:30           1003 Globs.dart
+-a----        21-04-2024     16:02           3469 main.dart
+-a----        23-02-2024     15:39            300 MCQ_details.dart
+
+
+PS D:\up_skill_1\lib> cd Screens
+PS D:\up_skill_1\lib\Screens> ls
+
+
+    Directory: D:\up_skill_1\lib\Screens
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        19-04-2024     10:19                Explore
+d-----        22-04-2024     06:32                MCQ_screen
+d-----        22-04-2024     06:20                onboding
+d-----        22-04-2024     16:05                Profile
+d-----        22-04-2024     07:27                Search
+-a----        09-04-2024     10:55           8376 MathsSolver.dart
+-a----        15-04-2024     21:44           2323 MyMain.dart
+
+
+PS D:\up_skill_1\lib\Screens> git remote add origin https://github.com/Rishabh-Mukadam/Platform-for-aptitude-MCQ.git ````````````````````````````````````````````````````````````````````````````````````step 5
+PS D:\up_skill_1\lib\Screens> git remote -v``````````````````````````````````````````````````````````````````````````````````````````````step 5-b
+origin  https://github.com/Rishabh-Mukadam/Platform-for-aptitude-MCQ.git (fetch)
+origin  https://github.com/Rishabh-Mukadam/Platform-for-aptitude-MCQ.git (push)
+PS D:\up_skill_1\lib\Screens> git branch``````````````````````````````````````````````````````````````````````````````````````````````step 6
+* master
+PS D:\up_skill_1\lib\Screens> git branch -M main``````````````````````````````````````````````````````````````````````````````````````````````step 6-b
+PS D:\up_skill_1\lib\Screens> git branch``````````````````````````````````````````````````````````````````````````````````````````````step 6-c
+* main
+PS D:\up_skill_1\lib\Screens> git push origin main``````````````````````````````````````````````````````````````````````````````````````````````step 7
+info: please complete authentication in your browser...
+Enumerating objects: 248, done.
+Counting objects: 100% (248/248), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (212/212), done.
+Writing objects: 100% (248/248), 2.16 MiB | 554.00 KiB/s, done.
+        modified:   ../main.dart
